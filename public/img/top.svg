@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="46px" viewBox="0 0 66 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>top</title>
+    <g id="pc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-" transform="translate(-1827.000000, -750.000000)">
+            <g id="悬浮条" transform="translate(1660.000000, 440.000000)">
+                <g id="top" transform="translate(167.000000, 310.000000)">
+                    <path d="M33,0 L39,6 L66,6 L66,13.5 C66,31.4492544 51.4492544,46 33.5,46 L32.5,46 C14.5507456,46 2.19814969e-15,31.4492544 0,13.5 L0,6 L27,6 L33,0 Z" id="形状结合" fill="#F46F0E" opacity="0.8"></path>
+                    <text id="TOP" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" fill="#FFFFFF">
+                        <tspan x="18" y="29">TOP</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

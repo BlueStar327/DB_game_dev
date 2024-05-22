@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom styles
+header {
+    .header_box {
+        max-width: 144rem;
+        width: 100%;
+
+        .header_logo {
+            a {
+                img {
+                    aspect-ratio: 160/49;
+                    width: 16rem;
+                }
+            }
+        }
+
+        .nav-link {
+            font-size: 1.4rem;
+            font-weight: bold;
+            @apply text-white no-underline;
+            &:hover {
+              @apply text-orange-500;
+            }
+        }
+
+        .nav-link.scrolled-link {
+            @apply text-gray-500;
+            &:hover {
+              @apply text-orange-500;
+            }
+        }     
+
+        .nav-links {
+            font-size: 1.4rem;
+            font-weight: bold;
+            @apply text-white no-underline;
+
+            .arrow-icon {
+                height: 0;
+                width: 0;
+                border-left: 6px solid transparent; /* Size of the left side of the triangle */
+                border-right: 6px solid transparent; /* Size of the right side of the triangle */
+                border-bottom: 6px solid white; /* Height and color of the triangle */
+                display: inline-block;
+                margin-left: 8px;
+                transform: rotate(45deg);
+                transition: transform 0.3s;
+
+                &.scrolled-link {
+                    border-bottom: 6px solid gray; /* Height and color of the triangle */
+                }
+              }     
+
+              .arrow-icon.close {
+                transform: rotate(180deg);
+              }
+              
+              .arrow-icon.open {
+                transform: rotate(0deg);
+              }
+        }
+
+        .nav-links.scrolled-link {
+            @apply text-gray-500;
+        }  
+
+        .group:hover .sub-links,
+        .group:active .sub-links {
+            @apply block;
+        }  
+
+        .sub-links {
+            @apply absolute bg-white shadow-md;
+            border-radius: 0.4rem;
+            margin-left: -5rem;
+            margin-top: 2.4rem;
+            padding: 0.6rem 0.8rem;
+            position: absolute;
+            right: -3rem;
+            width: max-content;
+
+            li {
+                padding: 0.6rem 0.8rem 0.6rem 2.2rem;
+                font-size: 1.2rem;
+                
+                &::before {
+                    background: #ff7e04;
+                    border-radius: 50%;
+                    content: "";
+                    height: 0.8rem;
+                    left: 0.5rem;
+                    position: absolute;
+                    top: calc(50% - 0.4rem);
+                    width: 0.8rem;
+                }
+
+                &:hover {
+                    background: #d3d3d3;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
